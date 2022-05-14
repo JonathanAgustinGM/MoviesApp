@@ -15,9 +15,6 @@ class MoviesHome: UIViewController {
     @IBOutlet var TrendingList: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        movie = MoviesExternalData.shared.Trending.results!
-        TrendingList.reloadData()
-
         TrendingList.dataSource = self
         TrendingList.delegate = self
         TrendingList.register(UINib(nibName: "MovieCell", bundle: nil), forCellWithReuseIdentifier: "moviecell")
@@ -25,34 +22,30 @@ class MoviesHome: UIViewController {
     }
 
     @IBAction func VerPeliculas(_ sender: Any) {
-        MoviesViewModel.shared.VerPeliculas { _ in
-            self.movie = MoviesExternalData.shared.Trending.results!
+        MoviesViewModel.shared.VerPeliculas { newtrend in
+            self.movie = newtrend.results!
             DispatchQueue.main.async {
-                self.viewDidLoad()
+                self.TrendingList.reloadData()
             }
         }
-    }
+}
 
     @IBAction func VerTvShows(_ sender: Any) { viewDidLoad()
-        MoviesViewModel.shared.VerTVShows { _ in
-            self.movie = MoviesExternalData.shared.Trending.results!
-
+        MoviesViewModel.shared.VerTvShows { newtrend in
+            self.movie = newtrend.results!
             DispatchQueue.main.async {
-                self.viewDidLoad()
+                self.TrendingList.reloadData()
             }
         }
     }
-
     @IBAction func VerTodo(_ sender: Any) {
-        MoviesViewModel.shared.VerTodos { _ in
-            self.movie = MoviesExternalData.shared.Trending.results!
-
+        MoviesViewModel.shared.VerTodos { newtrend in
+            self.movie = newtrend.results!
             DispatchQueue.main.async {
-                self.viewDidLoad()
+                self.TrendingList.reloadData()
             }
         }
     }
-
     /*
      // MARK: - Navigation
 
