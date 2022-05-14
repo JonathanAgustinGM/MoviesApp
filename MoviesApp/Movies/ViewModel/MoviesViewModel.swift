@@ -2,7 +2,7 @@
 //  MoviesViewModel.swift
 //  MoviesApp
 //
-//  Created by Jordy Gracia on 14/05/22.
+//  Created by Jonathan Gracia on 14/05/22.
 //
 
 import Foundation
