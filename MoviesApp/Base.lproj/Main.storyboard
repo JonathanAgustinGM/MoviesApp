@@ -45,13 +45,18 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npf-v5-hzs">
-                                <rect key="frame" x="173.66666666666666" y="663" width="67" height="31"/>
+                                <rect key="frame" x="164.66666666666666" y="663" width="85" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="VGH-d9-xlC"/>
-                                    <constraint firstAttribute="width" constant="67" id="YZg-a6-2cI"/>
+                                    <constraint firstAttribute="width" constant="85" id="YZg-a6-2cI"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Registrar">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RegistrarBoton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Miw-Md-rP9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,7 +80,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gu4-se-y8J"/>
                     <connections>
+                        <outlet property="EmailTextfield" destination="QZD-3o-XeJ" id="r2g-UN-f6G"/>
                         <outlet property="Singin" destination="HWe-U2-rtR" id="INZ-ru-w5K"/>
+                        <outlet property="paswordtextfield" destination="S99-cV-1gg" id="C5e-UM-d83"/>
+                        <outlet property="registerboton" destination="Npf-v5-hzs" id="Ocx-QQ-0U2"/>
                         <segue destination="N6A-NT-3BH" kind="show" identifier="movieshomesegue" id="KxX-2v-bIN"/>
                     </connections>
                 </viewController>
