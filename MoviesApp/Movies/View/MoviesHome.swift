@@ -7,7 +7,10 @@
 
 import Kingfisher
 import UIKit
+import FirebaseAuth
+
 class MoviesHome: UIViewController {
+    @IBOutlet weak var MenuBtn: UIBarButtonItem!
     var movie: Array<Results> = MoviesExternalData.shared.Trending.results!
     @IBOutlet var PeliculasBtn: UIButton!
     @IBOutlet var TvBtn: UIButton!
@@ -46,6 +49,14 @@ class MoviesHome: UIViewController {
             }
         }
     }
+    @IBAction func ShowMenu(_ sender: Any) {
+        do {
+        try Auth.auth().signOut()
+            navigationController?.popViewController(animated: true)
+    }
+        catch{
+        }
+        }
     /*
      // MARK: - Navigation
 

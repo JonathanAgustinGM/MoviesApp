@@ -23,7 +23,9 @@
                                     <constraint firstAttribute="height" constant="45" id="bdF-Wi-ZID"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesion"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesion">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="SingConfirm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xT-hO-mxe"/>
                                 </connections>
@@ -52,26 +54,45 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Registrar">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="5"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="RegistrarBoton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Miw-Md-rP9"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="V9J-p3-a2L">
+                                <rect key="frame" x="189" y="285" width="37" height="33"/>
+                                <color key="color" red="0.5176470876" green="0.77254903320000001" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBZ-wP-XIc">
+                                <rect key="frame" x="86" y="281" width="253" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="Fkj-3H-TUW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.036709969362763384" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.12354012540000001" green="0.26989368559999999" blue="0.2533338423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="VBZ-wP-XIc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="2Ft-cG-ubn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZD-3o-XeJ" secondAttribute="trailing" constant="53" id="4Ac-kb-r34"/>
+                            <constraint firstItem="V9J-p3-a2L" firstAttribute="centerX" secondItem="6mM-Js-ein" secondAttribute="centerX" id="5C5-Tr-DTJ"/>
                             <constraint firstItem="6mM-Js-ein" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="65e-GX-qlw"/>
                             <constraint firstItem="Npf-v5-hzs" firstAttribute="centerX" secondItem="HWe-U2-rtR" secondAttribute="centerX" id="726-2H-sca"/>
                             <constraint firstItem="HWe-U2-rtR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="75c-UJ-426"/>
                             <constraint firstItem="QZD-3o-XeJ" firstAttribute="trailing" secondItem="S99-cV-1gg" secondAttribute="trailing" id="77J-c3-RyB"/>
+                            <constraint firstItem="VBZ-wP-XIc" firstAttribute="trailing" secondItem="6mM-Js-ein" secondAttribute="trailing" id="7ck-ih-bD5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Npf-v5-hzs" secondAttribute="bottom" constant="42" id="K1Q-xA-fV3"/>
+                            <constraint firstItem="VBZ-wP-XIc" firstAttribute="centerY" secondItem="V9J-p3-a2L" secondAttribute="centerY" id="Lhj-Wa-tqe"/>
                             <constraint firstItem="QZD-3o-XeJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="NCL-lN-ZAl"/>
                             <constraint firstItem="QZD-3o-XeJ" firstAttribute="top" secondItem="6mM-Js-ein" secondAttribute="bottom" constant="77" id="P4c-pX-f7s"/>
+                            <constraint firstItem="VBZ-wP-XIc" firstAttribute="top" secondItem="6mM-Js-ein" secondAttribute="bottom" constant="23" id="WxT-1v-7Hx"/>
                             <constraint firstItem="6mM-Js-ein" firstAttribute="centerX" secondItem="HWe-U2-rtR" secondAttribute="centerX" id="XjE-5F-G3W"/>
                             <constraint firstItem="S99-cV-1gg" firstAttribute="top" secondItem="QZD-3o-XeJ" secondAttribute="bottom" constant="23" id="bHo-OW-Dfq"/>
+                            <constraint firstItem="QZD-3o-XeJ" firstAttribute="top" secondItem="VBZ-wP-XIc" secondAttribute="bottom" constant="13" id="k6R-Qc-2Hi"/>
                             <constraint firstItem="6mM-Js-ein" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ktU-HX-RTl"/>
                             <constraint firstItem="6mM-Js-ein" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mmw-mM-FLX"/>
                             <constraint firstItem="QZD-3o-XeJ" firstAttribute="leading" secondItem="S99-cV-1gg" secondAttribute="leading" id="nmb-0T-88g"/>
@@ -80,7 +101,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gu4-se-y8J"/>
                     <connections>
+                        <outlet property="CargandoActivity" destination="V9J-p3-a2L" id="x6g-vR-XeR"/>
                         <outlet property="EmailTextfield" destination="QZD-3o-XeJ" id="r2g-UN-f6G"/>
+                        <outlet property="ErrorLabel" destination="VBZ-wP-XIc" id="0d8-MG-Fgf"/>
                         <outlet property="Singin" destination="HWe-U2-rtR" id="INZ-ru-w5K"/>
                         <outlet property="paswordtextfield" destination="S99-cV-1gg" id="C5e-UM-d83"/>
                         <outlet property="registerboton" destination="Npf-v5-hzs" id="Ocx-QQ-0U2"/>
@@ -161,9 +184,13 @@
                         <barButtonItem key="backBarButtonItem" title="Atras" id="H3L-bu-NT3"/>
                         <barButtonItem key="rightBarButtonItem" title="Mi Perfil" id="eH1-R5-qRU">
                             <imageReference key="image" image="person.crop.square.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                            <connections>
+                                <action selector="ShowMenu:" destination="N6A-NT-3BH" id="HTy-b3-p8n"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="MenuBtn" destination="eH1-R5-qRU" id="mGD-xs-Xm7"/>
                         <outlet property="PeliculasBtn" destination="lox-Pk-ROD" id="dIs-DL-0f5"/>
                         <outlet property="TodosBtn" destination="lyR-Xt-I7j" id="Gvc-Cj-DJC"/>
                         <outlet property="TrendingList" destination="bgL-gS-8NY" id="6eM-X6-cfB"/>
@@ -279,7 +306,7 @@
     </scenes>
     <resources>
         <image name="Fondo" width="576" height="1024"/>
-        <image name="person.crop.square.fill" catalog="system" width="128" height="114"/>
+        <image name="person.crop.square.fill" catalog="system" width="32" height="32"/>
         <image name="the mdb " width="185.03999328613281" height="133.39999389648438"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
