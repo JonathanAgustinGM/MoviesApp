@@ -21,6 +21,7 @@ extension DescriptionMovie: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         cell.textLabel?.font = UIFont.systemFont(ofSize: 8)
+        cell.textLabel?.textAlignment = .center
         let seccion = indexPath.section
         switch seccion {
             case 0 :

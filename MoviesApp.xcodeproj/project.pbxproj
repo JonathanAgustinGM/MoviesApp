@@ -166,7 +166,6 @@
 				3689D1DA09934335CD48A6C4 /* Pods-MoviesApp.debug.xcconfig */,
 				4326151D4CD181D79F0C9581 /* Pods-MoviesApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -220,7 +219,7 @@
 			);
 			mainGroup = C75FB8CF282DB8AA00F5C850;
 			packageReferences = (
-				C75FB923282DE48A00F5C850 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
+				C75FB923282DE48A00F5C850 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = C75FB8D9282DB8AA00F5C850 /* Products */;
 			projectDirPath = "";
@@ -459,6 +458,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,6 +488,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -527,7 +528,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C75FB923282DE48A00F5C850 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		C75FB923282DE48A00F5C850 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -540,7 +541,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		C75FB924282DE48A00F5C850 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C75FB923282DE48A00F5C850 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = C75FB923282DE48A00F5C850 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
