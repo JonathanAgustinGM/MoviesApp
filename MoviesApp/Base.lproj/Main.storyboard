@@ -3,7 +3,6 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -93,7 +92,6 @@
                             <constraint firstItem="6mM-Js-ein" firstAttribute="centerX" secondItem="HWe-U2-rtR" secondAttribute="centerX" id="XjE-5F-G3W"/>
                             <constraint firstItem="S99-cV-1gg" firstAttribute="top" secondItem="QZD-3o-XeJ" secondAttribute="bottom" constant="23" id="bHo-OW-Dfq"/>
                             <constraint firstItem="QZD-3o-XeJ" firstAttribute="top" secondItem="VBZ-wP-XIc" secondAttribute="bottom" constant="13" id="k6R-Qc-2Hi"/>
-                            <constraint firstItem="6mM-Js-ein" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ktU-HX-RTl"/>
                             <constraint firstItem="6mM-Js-ein" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mmw-mM-FLX"/>
                             <constraint firstItem="QZD-3o-XeJ" firstAttribute="leading" secondItem="S99-cV-1gg" secondAttribute="leading" id="nmb-0T-88g"/>
                             <constraint firstItem="HWe-U2-rtR" firstAttribute="top" secondItem="S99-cV-1gg" secondAttribute="bottom" constant="55" id="yp3-Ra-75G"/>
@@ -113,6 +111,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="927.536231884058" y="53.804347826086961"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yGi-F6-4nx">
+            <objects>
+                <viewController id="BHh-iu-9y3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="weO-bv-KCJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill.xmark.rtl" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Big-GI-zix">
+                                <rect key="frame" x="87" y="267" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DGj-3r-wIu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vZQ-5e-aPX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KNm-9k-Omh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="-678"/>
         </scene>
         <!--Peliculas Destacadas-->
         <scene sceneID="nF3-OG-pBp">
@@ -182,20 +202,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Peliculas Destacadas" id="UcL-2A-JHY">
                         <barButtonItem key="backBarButtonItem" title="Atras" id="H3L-bu-NT3"/>
-                        <barButtonItem key="rightBarButtonItem" title="Mi Perfil" id="eH1-R5-qRU">
-                            <imageReference key="image" image="person.crop.square.fill" catalog="system" symbolScale="large" renderingMode="template"/>
-                            <connections>
-                                <action selector="ShowMenu:" destination="N6A-NT-3BH" id="HTy-b3-p8n"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="MenuBtn" destination="eH1-R5-qRU" id="mGD-xs-Xm7"/>
                         <outlet property="PeliculasBtn" destination="lox-Pk-ROD" id="dIs-DL-0f5"/>
                         <outlet property="TodosBtn" destination="lyR-Xt-I7j" id="Gvc-Cj-DJC"/>
                         <outlet property="TrendingList" destination="bgL-gS-8NY" id="6eM-X6-cfB"/>
                         <outlet property="TvBtn" destination="NPo-2o-u2V" id="OwM-zo-26w"/>
                         <segue destination="k9C-vj-4Oc" kind="show" identifier="descriptionsegue" id="pDq-Gj-ymU"/>
+                        <segue destination="BHh-iu-9y3" kind="show" id="gP2-6J-exi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aJ-3Q-THp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -317,7 +331,7 @@
     </scenes>
     <resources>
         <image name="Fondo" width="576" height="1024"/>
-        <image name="person.crop.square.fill" catalog="system" width="32" height="32"/>
+        <image name="person.fill.xmark.rtl" catalog="system" width="128" height="88"/>
         <image name="the mdb " width="185.03999328613281" height="133.39999389648438"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -10,7 +10,6 @@ import UIKit
 import FirebaseAuth
 
 class MoviesHome: UIViewController {
-    @IBOutlet weak var MenuBtn: UIBarButtonItem!
     var movie: Array<Results> = MoviesExternalData.shared.Trending.results!
     @IBOutlet var PeliculasBtn: UIButton!
     @IBOutlet var TvBtn: UIButton!
@@ -18,12 +17,33 @@ class MoviesHome: UIViewController {
     @IBOutlet var TrendingList: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpMenu()
         TrendingList.dataSource = self
         TrendingList.delegate = self
-        TrendingList.register(UINib(nibName: "MovieCell", bundle: nil), forCellWithReuseIdentifier: "moviecell")
-        // Do any additional setup after loading the view.
+        TrendingList.register(UINib(nibName: "MovieCell", bundle: nil), forCellWithReuseIdentifier: "moviecell")        // Do any additional setup after loading the view.
+    }
+    
+    func setUpMenu() {
+        var menuItems: [UIAction] {
+            return [
+                UIAction(title: "Profile", image: UIImage(systemName: "person.circle.fill"), handler: { (_) in
+                }),
+                UIAction(title: "SingOut",image: UIImage(systemName: "person.fill.xmark.rtl") , handler: { (_) in       do {
+                    try Auth.auth().signOut()
+                    self.navigationController?.popViewController(animated: true)
+                }
+                    catch{
+                    }         }),
+                
+            ]        }
+        
+        var demoMenu: UIMenu {
+            return UIMenu(title: "", image: UIImage(systemName: "ellipsis"), identifier: nil, options: [], children: menuItems)
+        }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Menu", image: nil, primaryAction: nil, menu: demoMenu)
     }
 
+        
     @IBAction func VerPeliculas(_ sender: Any) {
         MoviesViewModel.shared.VerPeliculas { newtrend in
             self.movie = newtrend.results!
@@ -50,12 +70,12 @@ class MoviesHome: UIViewController {
         }
     }
     @IBAction func ShowMenu(_ sender: Any) {
-        do {
+        /*do {
         try Auth.auth().signOut()
             navigationController?.popViewController(animated: true)
     }
         catch{
-        }
+        }*/
         }
     /*
      // MARK: - Navigation

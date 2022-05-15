@@ -12,6 +12,7 @@ class MoviesExternalData {
     static let shared = MoviesExternalData()
     var Trending = TrendingList()
     var singleMovie = SingleMovie()
+    //var userEmail = ""
     let baseUrl = "https://api.themoviedb.org/3/"
     let apikey = "?api_key=3b8c2d08270f557db603feb93ca32ec8"
     
