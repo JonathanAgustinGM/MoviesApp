@@ -16,7 +16,9 @@ class HomeViewModel {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let result = result, error == nil {
             print(result)
-                succes(result)            }
+                succes(result)
+                MoviesExternalData.shared.userEmail = email
+            }
             else {
                 failure(error!)
             }

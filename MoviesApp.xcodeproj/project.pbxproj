@@ -27,6 +27,7 @@
 		C78F35E1282F5C63001E1D12 /* DescriptionSingleMovieExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F35E0282F5C63001E1D12 /* DescriptionSingleMovieExtension.swift */; };
 		C795F1F5282FB399002184E3 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795F1F4282FB399002184E3 /* MoviesViewModel.swift */; };
 		C79C1064282F78F6007870E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C79C1063282F78F6007870E8 /* GoogleService-Info.plist */; };
+		C7C35B512830DBEC007F735E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C35B502830DBEC007F735E /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		C78F35E0282F5C63001E1D12 /* DescriptionSingleMovieExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSingleMovieExtension.swift; sourceTree = "<group>"; };
 		C795F1F4282FB399002184E3 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		C79C1063282F78F6007870E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7C35B502830DBEC007F735E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				C75FB8DF282DB8AA00F5C850 /* Home.swift */,
 				C75FB8FB282DDEA500F5C850 /* MoviesHome.swift */,
 				C75FB92C282E3E6300F5C850 /* DescriptionMovie.swift */,
+				C7C35B502830DBEC007F735E /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				C75FB8DC282DB8AA00F5C850 /* AppDelegate.swift in Sources */,
 				C75FB8FC282DDEA500F5C850 /* MoviesHome.swift in Sources */,
 				C75FB8DE282DB8AA00F5C850 /* SceneDelegate.swift in Sources */,
+				C7C35B512830DBEC007F735E /* ProfileView.swift in Sources */,
 				C75FB8F4282DBB4100F5C850 /* MoviesListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
